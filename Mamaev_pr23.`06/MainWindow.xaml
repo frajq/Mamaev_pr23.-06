@@ -1,0 +1,18 @@
+﻿<Window x:Class="Mamaev_pr23._06.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mamaev_pr23._06"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DockPanel>
+            <StackPanel DockPanel.Dock="Right" Width="200" Background="Purple" RenderTransformOrigin="0.499,0.505">
+                <Button  Content="Просмотр истории" Click="Requests_Click" Margin="5"/>
+                <Button  Content="Партнеры" Click="Partners_Click" Margin="5"/>
+            </StackPanel>
+            <Frame x:Name="FrmMain" NavigationUIVisibility="Hidden"></Frame>
+        </DockPanel>
+    </Grid>
+</Window>
